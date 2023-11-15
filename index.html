@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav>
+    <div class="main-nav container flex">
+      <a class="company-logo" onclick="reload()" href="#"><img src="logo.png" alt="logo" /></a>
+      <div class="nav-links">
+        <ul>
+          <li class="link-hover nav-item" id="sports" onclick="onNavItemClick(id)">
+            Sports
+          </li>
+          <li class="link-hover nav-item" id="finance" onclick="onNavItemClick(id)">
+            Finance
+          </li>
+          <li class="link-hover nav-item" id="politics" onclick="onNavItemClick(id)">
+            Politics
+          </li>
+          <li class="link-hover nav-item" id="technology" onclick="onNavItemClick(id)">
+            Technology
+          </li>
+        </ul>
+      </div>
+      <div class="search-bar flex">
+        <input id="search-bar-input" type="text" name="news-input" placeholder="e.g. Science" />
+        <button id="search-bar-button" type="submit">Search</button>
+      </div>
+    </div>
+  </nav>
+  <main>
+    <div class="card-container container flex"></div>
+  </main>
+  <template id="template-news-card">
+    <div class="card">
+      <div class="card-header">
+        <img src="https://via.placeholder.com/400x200" alt="news-img" id="news-img" />
+      </div>
+      <div class="card-content">
+        <h3 id="news-title">This is title</h3>
+        <h6 class="news-source" id="news-source">End Gadet 26/08/2023</h6>
+        <p class="news-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt
+          ratione temporibus non fugiat nobis cum rerum modi ipsam esse
+          inventore!
+        </p>
+      </div>
+    </div>
+  </template>
+  <!-- <script src="index.js"></script> -->
+  <!-- <script src="second.js"></script> -->
+  <script src="three.js"></script>
+</body>
+
+</html>
