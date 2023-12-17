@@ -1,7 +1,7 @@
 window.addEventListener('load',fetchApi("india"));
 
 async function fetchApi(query){
-    const res = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=4c31518da22247e49b155c9a1a103934`);
+    const res = await fetch(`https://newsapi.org/v2/everything?q=${query}&apiKey=56c54ee9ab2d422a915bac4da3e83ea5`);
     const store =await res.json();
     BindData(store.articles);
 }
